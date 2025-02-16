@@ -4,4 +4,3 @@ leche
 arroz
 banana
 tomate
-naranjas
