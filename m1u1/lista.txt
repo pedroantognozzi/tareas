@@ -2,3 +2,6 @@ carne
 pan
 leche
 arroz
+banana
+tomate
+naranjas
