@@ -1,4 +1,22 @@
 .foto-cv {
     width: 600px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    color: green;
+    font-size: 30px;
+}
+h1 {
+    color: #800000;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+p {
+    font-size: 20px;
+}
+ul, li {
+    font-size: 20px;
 }
