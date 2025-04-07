@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Número Mayor</title>
+</head>
+<body>
+    <h1>Ejercicio 2: Determinar el Número Mayor</h1>
+    <label for="numeros">Ingresa números separados por comas:</label>
+    <input type="text" id="numeros" placeholder="Ejemplo: 10, 25, 47, 3, 89">
+    <button onclick="determinarMayor()">Calcular Número Mayor</button>
+    <p id="resultado-mayor"></p>
+
+    <script>
+        function determinarMayor() {
+            // Obtener el valor ingresado por el usuario
+            const numerosTexto = document.getElementById("numeros").value;
+
+            // Convertir el texto ingresado en un array de números
+            const numerosArray = numerosTexto.split(",").map(num => parseFloat(num.trim()));
+
+            // Validar que todos los valores sean números
+            if (numerosArray.some(isNaN)) {
+                document.getElementById("resultado-mayor").innerText = "Por favor, ingresa solo números separados por comas.";
+                return;
+            }
+
+            // Determinar el número mayor
+            let mayor = numerosArray[0];
+            for (let i = 1; i < numerosArray.length; i++) {
+                if (numerosArray[i] > mayor) {
+                    mayor = numerosArray[i];
+                }
+            }
+
+            // Mostrar el resultado
+            document.getElementById("resultado-mayor").innerText = `El número mayor es: ${mayor}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Medio de transporte</title>
+</head>
+<body>
+    <h1>Ejercicio 1: Medio de Transporte</h1>
+    <label for="distancia">Ingresa la distancia en metros:</label>
+    <input type="number" id="distancia" />
+    <button onclick="determinarTransporte()">Determinar Transporte</button>
+    <p id="resultado-transporte"></p>
+
+    <script>
+        // Ejercicio 1: Determinar medio de transporte
+        function determinarTransporte() {
+            const distancia = parseInt(document.getElementById("distancia").value);
+            let transporte;
+
+            if (distancia <= 1000) {
+                transporte = "pie";
+            } else if (distancia <= 10000) {
+                transporte = "bicicleta";
+            } else if (distancia <= 30000) {
+                transporte = "colectivo";
+            } else if (distancia <= 100000) {
+                transporte = "auto";
+            } else {
+                transporte = "avión";
+            }
+
+            document.getElementById("resultado-transporte").innerText = `El medio de transporte recomendado es: ${transporte}`;
+        }
+    </script>
+</body>
+</html>
