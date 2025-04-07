@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: Cambiar Fondo</title>
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .rojo {
+            background-color: red;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Haz clic en un cuadrado para cambiar el fondo</h1>
+    <div class="cuadrado rojo" onclick="cambiarFondo('red')"></div>
+    <div class="cuadrado verde" onclick="cambiarFondo('green')"></div>
+    <div class="cuadrado azul" onclick="cambiarFondo('blue')"></div>
+
+    <script>
+        function cambiarFondo(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
