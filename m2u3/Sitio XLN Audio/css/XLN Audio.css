@@ -1,0 +1,40 @@
+/* font-family: "Alfa Slab One", serif; */
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    height: 100px;
+}
+
+.navbar-brand img {
+    width: 130px;
+    height: auto;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    /* Asegúrate de que la altura esté definida */
+}
+
+.custom-container {
+    background-color: #a95efe;
+    /* Fondo oscuro */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    color: white;
+    /* Texto blanco */
+    max-width: 98%;
+    /* Ajusta el ancho máximo (80% del ancho de la página) */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+}
