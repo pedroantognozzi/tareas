@@ -89,3 +89,7 @@ h1, h2 {
 .news {
     background: url(../img/header\ 5.jpg) no-repeat;
 }
+
+.scroll-section {
+    scroll-margin-top: 65px; /* Ajusta el valor según sea necesario */
+}
