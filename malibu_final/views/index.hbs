@@ -135,33 +135,32 @@
         </div>
         <div class="col-lg-4 col-md-12 mt-4 mt-sm-0">
             <h2>Contact Us</h2>
-            <form class="row g-3">
+            <form class="row g-3" action="/" method="post">
                 <div class="col-md-6">
                     <label for="nombre" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="nombre">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
                 </div>
                 <div class="col-md-6">
                     <label for="apellido" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="apellido">
+                    <input type="text" class="form-control" id="apellido" name="apellido">
                 </div>
                 <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="youremail@email.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="youremail@email.com">
                 </div>
                 <div class="col-12">
                     <label for="tel" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="tel" placeholder="+54 9 11 1234-5678">
+                    <input type="text" class="form-control" id="tel" name="tel" placeholder="+54 9 11 1234-5678">
                 </div>
                 <div class="col-12">
                     <label for="mensaje" class="form-label">Message</label>
-                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-dark mt-3">Send</button>
                 </div>
             </form>
-
-
+            {{message}}
         </div>
     </div>
 </div>
